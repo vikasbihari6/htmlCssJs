@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes slector</title>
+    <style>
+        /* To create a variable with global scope */
+        :root {
+            --hovercolor: rgb(252, 0, 0);
+            --text-color: rgb(25, 10, 237);
+            --backgroundhovercolor: yellowgreen;
+        }
+
+        a:link {
+            background-color: rgb(193, 218, 224);
+        }
+
+        a:hover {
+            color: var(--hovercolor);
+        }
+
+        a.gclass:hover {
+            /* this is local variable */
+            --textsixe: 22px;
+            color: var(--hovercolor);
+            font-size: var(--textsixe);
+        }
+
+        div {
+            background-color: cyan;
+        }
+
+        div:hover {
+            background-color: var(--backgroundhovercolor);
+        }
+
+        p :first-child {
+            color: var(--text-color);
+        }
+
+        .container {
+            margin: 20px 50px;
+            height: 300px;
+            width: 400px;
+        }
+
+        .container1 {
+            margin: 20px 50px;
+            height: 300px;
+            width: 400px;
+            background-color: red;
+        }
+
+        .input {
+            height: 300px;
+            width: 1000px;
+        }
+
+        .head {
+            /* margin: 20px 50px; */
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is the heading </h1>
+    <div class="head">
+        <div class="container">
+            <p>this para under container class</p>
+            <a href="http://google.com" class="gclass" target="_blank">go to google</a>
+        </div>
+        <div class="container1">
+            <p>this is under container1 class</p>
+            <a href="http://facebook.com" target="_self"> go to facebook</a>
+        </div>
+        <p>this is out of all div</p>
+        <a href="#">go to next page</a>
+    </div>
+    <div class="input">
+        name: <input type="text" placeholder="enter your name">
+        email: <input type="email" placeholder="enter email address">
+        M no: <input type="number" placeholder="enter mobile no">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes slector</title>
+    <style>
+        /* A pseudo-class is used to define a special state of an element. */
+        /* Anchor Pseudo-classes */
+        a:link{
+            background-color: rgb(193, 218, 224);
+        }
+        a:hover{
+            color: red;
+        }
+        a.gclass:hover{
+            color: yellow;
+            font-size: 22px;
+        }
+        div{
+            background-color: cyan;
+        }
+        div:hover{
+            background-color: blueviolet;
+        }
+        p :first-child{
+            color: red;
+        }
+        h1{
+            display: none;
+        }
+        div:hover h1{
+            display: block;
+            background-color: blue;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        please hover on this for showing heading
+        <h1>this is the heading part</h1>
+    </div>
+    <div class="container">
+        <p>this para under container class</p>
+        <a href="http://google.com" class="gclass" target="_blank">go to google</a>
+    </div>
+    <div class="container1"> 
+        <p>this is under container1 class</p>
+        <a href="http://facebook.com" target="_self"> go to facebook</a>
+    </div>
+    <p>this is out of all div</p>
+    <a href="#">go to next page</a>
+    <div class="input">
+       name: <input type="text" placeholder="enter your name">
+       email: <input type="email" placeholder="enter email address">
+       M no: <input type="number" placeholder="enter mobile no">
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selector</title>
+    <style>
+        /* descendant selector */
+        div p{
+            color: red;
+        }
+        /* child selector = when direct connect child*/
+        div > p{
+            background-color: yellow;
+        }
+        /* Adjacent Sibling Selector (+) =element that is directly after another specific element */
+        div + p{
+            background-color: rgb(124, 206, 206);
+        }
+        /* General Sibling Selector (~) = all elements that are next siblings of a specified element */
+        div ~ p{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <div class="box1" id="">
+        <ul>
+            <li>this is vikas</li>
+            <p>this paragraph from ul list</p>
+        </ul>
+        <div id="boxid">
+            <p>this is under id</p>
+        </div>
+    </div>
+    <p>this is out of all div</p>
+    <div class="box2">
+        <p>this is paragraph from direct div</p>
+    </div>
+    <h3>this is last heading</h3>
+    <p>this is the last paragraph</p>
+</body>
+</html>

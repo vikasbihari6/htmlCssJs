@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        html{
+            font-size: 4px;
+        }
+        .image{
+            border: 4px solid red;
+            height: 400px;
+            width: 400px;
+        }
+        img{
+            height: inherit;
+            width: inherit;
+        }
+        .container{
+            font-size: 3em;
+        }
+        #first{
+            /* em unit allows setting the font size of an element relative to the font size of its parent */
+            font-size: 4em;
+        }
+        #second{
+            /* The rem is based upon the font-size value of the root element, which is the <html> element */
+            font-size: 4rem;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ijUUV4-IBga78fJkEiJgHWr1D55WZKjivQ&usqp=CAU" alt="">
+    </div>
+    <div class="container">
+        <h1 id="first">this is first heading </h1>
+        <h1 id="second">this is second heading </h1>
+        <h1 id="third">this is third heading </h1>
+    </div>
+</body>
+</html>

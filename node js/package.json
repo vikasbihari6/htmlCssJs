@@ -1,0 +1,14 @@
+{
+  "name": "cwh",
+  "version": "1.0.0",
+  "description": "this is a packege while stydin and exploring node and express",
+  "main": "01javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

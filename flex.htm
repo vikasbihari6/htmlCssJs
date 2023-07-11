@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 100px auto;
+            padding: 20px;
+            height: 600px;
+            /* initilize the display as flex */
+            display: flex;            
+            /* display properties   */
+            /* flex direction row is default */
+            flex-direction: row; 
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* by default flex direction no wrap */
+            /* wrap adjust the div when width and height increse and decrease */
+            flex-wrap: wrap;      
+            /* flex-wrap: wrap-reverse; */
+            /* flow is define how to put your div */
+            /* flex-flow: column; */
+            /* flex-flow: column-reverse; */
+            /* flex-flow: wrap; */
+            /* flex-flow: row-reverse; */
+            /* justify-content: center; */
+            /* justify-content: right; */
+            /* justify-content: space-between; */
+            /* difference bw space bw and around is in around start and end space is same but not in b/w */
+            /* justify-content: space-around;  */
+
+            align-items: center;
+            align-items: flex-end;
+            /* stretch works with flex wrap:wrap; */
+            align-items: stretch;
+        }
+        .box{
+            border: 2px solid rgb(167, 15, 7);
+            padding: 10px;
+            margin: 10px;
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+        }
+        #box1{
+            /* order of those box is high which will go at end */
+            order: 12;
+            /* flex-grow: ; it defines the size its no is directly pro to size */
+            flex-grow: 2;
+            /* flex-shrink: ;it does how much shrink the box */
+            flex-shrink: 2;
+            /* flex-basis: ;when flex-direction: ; is set then it control the width */
+            flex-basis: 233px;
+        }
+        #box2{
+            order: 43;
+            flex-grow: 4;
+            flex-shrink: 3;
+        }
+        #box3{
+            order: 35;
+            /* first is flex-grow: ; second is flex-shrink: ; third is flex-basis: ; */
+            flex: 2 2 200px;  
+            /* align self where you want to box */
+            align-self: center;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">First</div>
+        <div class="box" id="box2">second</div>
+        <div class="box" id="box3">third</div>
+        <div class="box" id="box4">forth</div>
+        <div class="box" id="box5">five</div>
+    </div>
+</body>
+</html>

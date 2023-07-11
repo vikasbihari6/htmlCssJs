@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events </title>
+    <style>
+        #btn {
+            background-color: red;
+            cursor: pointer;
+            border: 2px solid green;
+            border-radius: 14px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ut officiis. Inventore reiciendis commodi
+            distinctio omnis iusto sequi incidunt reprehenderit libero, temporibus in deleniti esse nihil nam amet
+            molestiae eveniet numquam suscipit fugiat, voluptates perferendis sunt labore recusandae? Provident,
+            placeat! Reiciendis hic, quibusdam assumenda omnis, obcaecati consequuntur vitae aspernatur labore sequi
+            cupiditate animi, necessitatibus maxime earum accusamus eos quam? Aut explicabo temporibus accusamus eum
+            odio voluptatibus, voluptas laboriosam distinctio neque vero sed. Modi optio possimus libero molestias!
+            Nobis amet modi sunt unde porro. Reiciendis distinctio accusantium illum quia mollitia blanditiis et
+            delectus, praesentium rerum totam ipsa hic modi commodi eum eius nemo, at ratione nulla dolorum quod
+            veritatis ea quasi earum quidem? Expedita ab, saepe quaerat adipisci praesentium sit dolorum nesciunt sequi
+            distinctio inventore blanditiis, voluptate quia recusandae dolores deserunt facilis consequatur, rerum in
+            natus similique? Molestiae libero quia, fugiat nemo, enim nam laboriosam maiores obcaecati recusandae soluta
+            consequatur animi in quisquam modi officiis minima non, esse facilis porro dignissimos culpa earum odit
+            dicta? Natus maiores dicta sequi, ab ipsam eos sit voluptates, ullam obcaecati nemo, aperiam sunt
+            perspiciatis eligendi qui explicabo ad nobis magni consequuntur nisi doloribus ratione a quisquam. Sed
+            minima soluta voluptate, voluptates excepturi nesciunt impedit architecto.
+        </p>
+    </div>
+    <button id="btn" onclick="togglehide()">
+        hide/show
+    </button>
+    <script>
+        let para=document.getElementById('para')
+        para.addEventListener('mouseover',function run(){
+            // alert('mouse is over the para')
+            console.log('mouse inside')
+        })
+        para.addEventListener('mouseout',function run(){
+            // alert('mouse is out of para')
+            console.log('mouse outside')
+        })
+
+        function togglehide() {
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

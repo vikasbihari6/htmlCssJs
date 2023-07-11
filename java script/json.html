@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about json object</title>
+</head>
+<body>
+    JSON stands for JavaScript Object Notation
+    <p id="vk"></p>
+    <script>
+        // JSON is a format for storing and transporting data.
+        let jsonobj={
+            name:"vikas",
+            class:"BCA",
+            rollno:3250,
+            district:"sitamarhi"
+        }
+        console.log(jsonobj);
+        let myjson=JSON.stringify(jsonobj)
+        console.log(myjson);
+        myjson=myjson.replace("sitamarhi","stm");
+        console.log(myjson);
+        let newmyjson=JSON.parse(myjson)
+        console.log(newmyjson);
+        document.getElementById("vk").innerHTML=jsonobj.name
+    </script>
+</body>
+</html>

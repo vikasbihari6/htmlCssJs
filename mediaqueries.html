@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box{
+            background-color: cyan;
+            text-align: center;
+            font-size: 35px;
+            display: none;
+        }
+        /* @media it works like if condition it is working when you zoom the page */
+        @media screen and (max-width: 400px)
+        {
+            #box1{
+                display: block;
+            }
+        }
+        @media screen and (max-width:600px) and (min-width: 300px)
+        {
+            #box2{
+                display: block;
+                color: yellow;
+                background-color: green;
+            }
+        }
+        @media screen and (max-width:800px) and (min-width:600px)
+        {
+            #box3{
+                display: block;
+                color: blue;
+                background-color: red;
+            }
+        }
+        @media screen and (max-width:1200px) and (min-width:800px)
+        {
+            #box4{
+                display: block;
+                color: brown;
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">this is the first</div>
+    <div class="box" id="box2">this is the second</div>
+    <div class="box" id="box3">this is the third</div>
+    <div class="box" id="box4">this is the forth</div>
+</body>
+</html>

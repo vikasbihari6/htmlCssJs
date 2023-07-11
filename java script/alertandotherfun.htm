@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <h1>this is about the alert prompt and confirm</h1>
+
+    <script>
+        // alert("this is a messege")
+        // here guest is for default
+        // let name=prompt("what is your name","guest")
+        // console.log(name)
+
+        let deletepost=confirm("do you really want to delete your post")
+        // console.log(deletepost);
+        if(deletepost)
+        {
+            // code of delete post
+            console.log("your post has been deleted");
+        }
+        else{
+            // code of cancel the post
+            console.log("your post has not been deleted");
+        }
+    </script>
+</body>
+</html>

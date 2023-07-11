@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selector</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        a[target]
+        {
+            background-color: gold;
+        }
+        a[target="_blank"]
+        {
+            border: 2px solid rgb(0, 255, 38);
+        }
+        /* selector is used to select elements with an attribute value containing a specified word. */
+        [title~=flower]
+        {
+            border: 2px solid red;
+        }
+        input[type="text"]
+        {
+            background-color: cyan;
+            text-align: center;
+        }
+        input[type="email"]
+        {
+            color: blue;
+            border: 2px solid hotpink;
+            
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 15px 20px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is the heading </h1>
+    <div class="container">
+        <p>this para under container class</p>
+        <a href="http://google.com" class="gclass" target="_blank">go to google</a>
+    </div>
+    <div class="container1">
+        <p>this is under container1 class</p>
+        <a href="http://facebook.com" target="_self"> go to facebook</a>
+    </div>
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqvX7PORWdshSf3DxlvWEXmMRZWd4Si-WtYQ&usqp=CAU" title="simple flower" alt="">
+        <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonas-kakaroto-736230.jpg&fm=jpg" title="rose flower" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifKH_F1IkoGelR56RZaqXLbL6ZGuiIsS5_Q&usqp=CAU" title="many flowers" alt="">
+    </div>
+    <p>this is out of all div</p>
+    <a href="#">go to next page</a>
+    <div class="input">
+       name: <input type="text" placeholder="enter your name">
+       email: <input type="email" placeholder="enter email address">
+       M no: <input type="number" placeholder="enter mobile no">
+    </div>
+</body>
+</html>
